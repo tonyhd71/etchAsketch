@@ -1,3 +1,6 @@
 .divs {
     display: inline-block;
 }
+.breakLine {
+    float:left;
+}
