@@ -1,5 +1,5 @@
 let divContainer = document.getElementById("container");
-for (let i = 0; i < 256; i++) {
+for (let i = 0; i <= 256; i++) {
     let selectedDiv = document.createElement("div");
     divContainer.append(selectedDiv);
 }
@@ -12,11 +12,15 @@ const module16 = document.getElementsByClassName("divs");
 
 for (let i = 0; i < arrayDiv.length; i++) {
     arrayDiv[i].classList.add("divs");
-    arrayDiv[i].innerHTML = i;
+    arrayDiv[i].innerHTML = "make this box wider";
     arrayDiv[i].setAttribute('id', i);
-    //arrayDiv[i].classList.add(i);
+    arrayDiv[i].classList.add(i);
     arrayDiv[i] = parseInt(arrayDiv[i].innerHTML);
-    if (arrayDiv[i] % 16 == 0) {
+    console.log(parseInt(module16[i].id));
+
+    //if (arrayDiv[i] % 16 == 0) {
+    if (parseInt(module16[i].id )% 16 == 0) {
+
         //const breakLine = document.querySelectorAll(".breakLine");
         module16[i].classList.add("breakLine");
         const breakLine = document.querySelectorAll("breakLine");
