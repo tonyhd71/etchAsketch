@@ -15,17 +15,18 @@ function fillContainer() {
     const module16 = document.getElementsByClassName("divs");
     for (let i = 0; i < arrayDiv.length; i++) {
         arrayDiv[i].classList.add("divs");
-        arrayDiv[i].innerHTML = "A";
+        eachDiv[i].style.color = "white";
+        arrayDiv[i].innerHTML = "OOOOO";
         arrayDiv[i].setAttribute('id', i +1);
         arrayDiv[i].classList.add(i);
         arrayDiv[i] = parseInt(arrayDiv[i].innerHTML);
         eachDiv[i].addEventListener("mouseleave", function (e) {
             this.style.backgroundColor = "red";
+            this.style.color = "red";
     });
         if (parseInt(module16[i].id )% num == 0) {
             module16[i].classList.add("breakLine");
-            const breakLine = document.querySelectorAll("breakLine");
-            const br = document.createElement("br");
+            const br = document.createElement("nobr");
             //Add a <br> after every element with a class name of breakline
             module16[i].insertAdjacentElement("afterend",br);
     }
