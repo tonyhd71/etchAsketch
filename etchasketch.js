@@ -1,4 +1,6 @@
 let divContainer = document.getElementById("container");
+const eachDiv = document.getElementsByClassName("divs");
+console.log(eachDiv);
 let num = 16;
 let inputSquareAmount;
 fillContainer();
@@ -17,13 +19,15 @@ function fillContainer() {
         arrayDiv[i].setAttribute('id', i +1);
         arrayDiv[i].classList.add(i);
         arrayDiv[i] = parseInt(arrayDiv[i].innerHTML);
+        eachDiv[i].addEventListener("mouseleave", function (e) {
+            this.style.backgroundColor = "red";
+    });
         if (parseInt(module16[i].id )% num == 0) {
             module16[i].classList.add("breakLine");
             const breakLine = document.querySelectorAll("breakLine");
             const br = document.createElement("br");
             //Add a <br> after every element with a class name of breakline
             module16[i].insertAdjacentElement("afterend",br);
-        }
     }
 }
 let clearButton = document.querySelector("button");
@@ -42,9 +46,11 @@ let divsInsideContainer = document.getElementsByClassName("divs");
 function changeColor() {
     console.log("hm");
 }
-//divsInsideContainer.addEventListener("onclick", changeColor);
+/*
 for (let i = 0; i < divsInsideContainer.length; i++) {
     divsInsideContainer[i].addEventListener("mouseenter", function (e) {
         this.style.backgroundColor = "red";
     });
+}
+*/
 }
