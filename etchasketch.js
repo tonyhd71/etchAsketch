@@ -7,9 +7,6 @@ function fillContainer() {
         let selectedDiv = document.createElement("div");
         divContainer.append(selectedDiv);
     }
-//}
-//fillContainer();
-//function populateEtchSketch() {
     const divList = document.querySelectorAll("#container div");
     //converting divs to Array
     const arrayDiv = Array.prototype.slice.call(divList);
@@ -29,8 +26,6 @@ function fillContainer() {
         }
     }
 }
-//}
-//populateEtchSketch();
 let clearButton = document.querySelector("button");
 clearButton.addEventListener("mouseup", numSquares);
 function numSquares() {
@@ -42,8 +37,14 @@ function numSquares() {
     divContainer.innerHTML = "";
     num = inputSquareAmount;
     fillContainer();
-    //return inputSquareAmount;
 }
-function passNum(num) {
-    return num;
+let divsInsideContainer = document.getElementsByClassName("divs");
+function changeColor() {
+    console.log("hm");
+}
+//divsInsideContainer.addEventListener("onclick", changeColor);
+for (let i = 0; i < divsInsideContainer.length; i++) {
+    divsInsideContainer[i].addEventListener("mouseenter", function (e) {
+        this.style.backgroundColor = "red";
+    });
 }
