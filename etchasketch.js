@@ -16,7 +16,7 @@ function fillContainer() {
     for (let i = 0; i < arrayDiv.length; i++) {
         arrayDiv[i].classList.add("divs");
         eachDiv[i].style.color = "white";
-        arrayDiv[i].innerHTML = "OOOOO";
+        arrayDiv[i].innerHTML = "O";
         arrayDiv[i].setAttribute('id', i +1);
         arrayDiv[i].classList.add(i);
         arrayDiv[i] = parseInt(arrayDiv[i].innerHTML);
@@ -43,15 +43,4 @@ function numSquares() {
     num = inputSquareAmount;
     fillContainer();
 }
-let divsInsideContainer = document.getElementsByClassName("divs");
-function changeColor() {
-    console.log("hm");
-}
-/*
-for (let i = 0; i < divsInsideContainer.length; i++) {
-    divsInsideContainer[i].addEventListener("mouseenter", function (e) {
-        this.style.backgroundColor = "red";
-    });
-}
-*/
 }

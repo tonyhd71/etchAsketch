@@ -3,12 +3,22 @@
     justify-content: space-between;
     list-style-type: none;
     display: inline-block;
-    width: 100%;
-
+    width: 69%;
+    justify-content: center;
 }
 .divs {
     display: table-cell;
 }
 .divs:hover {
     background-color: red;
+}
+h1 {
+    text-align: center;
+}
+button {
+    margin: 5px;
+    padding: 5px;
+}
+#filler {
+    width:30%
 }
