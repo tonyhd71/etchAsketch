@@ -3,8 +3,8 @@
     justify-content: space-between;
     list-style-type: none;
     display: inline-block;
-    width: 69%;
     justify-content: center;
+    width: auto;
 }
 .divs {
     display: table-cell;
@@ -18,7 +18,4 @@ h1 {
 button {
     margin: 5px;
     padding: 5px;
-}
-#filler {
-    width:30%
 }

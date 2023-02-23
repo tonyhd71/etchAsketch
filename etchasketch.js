@@ -16,7 +16,7 @@ function fillContainer() {
     for (let i = 0; i < arrayDiv.length; i++) {
         arrayDiv[i].classList.add("divs");
         eachDiv[i].style.color = "white";
-        arrayDiv[i].innerHTML = "O";
+        arrayDiv[i].innerHTML = '.';
         arrayDiv[i].setAttribute('id', i +1);
         arrayDiv[i].classList.add(i);
         arrayDiv[i] = parseInt(arrayDiv[i].innerHTML);
