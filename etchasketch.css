@@ -4,9 +4,13 @@
     justify-content: space-between;
     list-style-type: none;
     display: inline-block;
+    width: 960px;
 
 }
 .divs {
     border: 1px solid gray;
     display: table-cell;
+}
+.divs:hover {
+    background-color: red;
 }
