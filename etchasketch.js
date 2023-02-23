@@ -1,7 +1,6 @@
 let divContainer = document.getElementById("container");
-let num;
+let num = 16;
 function fillContainer() {
-    num = 8;
     for (let i = 1; i <= num*num; i++) { 
         let selectedDiv = document.createElement("div");
         divContainer.append(selectedDiv);
@@ -37,10 +36,6 @@ function numSquares() {
     if (inputSquareAmount > 100) {
         alert("Please pick 100 or less");
     }
-    hideContainer();
-    //return inputSquareAmount;
-}
-function hideContainer() {
     divContainer.style.display === 'none';
+    return inputSquareAmount;
 }
-
