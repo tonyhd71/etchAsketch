@@ -5,6 +5,7 @@
     display: inline-block;
     justify-content: center;
     width: auto;
+    height: auto;
 }
 .divs {
     display: table-cell;
