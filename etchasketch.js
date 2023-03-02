@@ -1,6 +1,5 @@
 let divContainer = document.getElementById("container");
 const eachDiv = document.getElementsByClassName("divs");
-console.log(eachDiv);
 let num = 16;
 let inputSquareAmount;
 let divWidth;
@@ -14,7 +13,6 @@ function fillContainer() {
         divWidth = divWidth.toString();
         divWidth = divWidth + 'px';
         divHeight = divWidth;
-        //console.log(divWidth);
     }
     const divList = document.querySelectorAll("#container div");
     //converting divs to Array
@@ -25,13 +23,10 @@ function fillContainer() {
         arrayDiv[i].classList.add("divs");
         eachDiv[i].style.color = "white";
         arrayDiv[i].innerHTML = '.';
-
         arrayDiv[i].style.width = divWidth;
         arrayDiv[i].style.height = divHeight;
-
         arrayDiv[i].setAttribute('id', i +1);
         arrayDiv[i].classList.add(i);
-        //arrayDiv[i].style.width = divWidth;
         arrayDiv[i] = parseInt(arrayDiv[i].innerHTML);
         arrayDiv[i] = parseInt(arrayDiv[i].innerHTML);
         eachDiv[i].addEventListener("mouseleave", function (e) {
@@ -46,8 +41,6 @@ function fillContainer() {
     }
     }
 }
-
-
 let clearButton = document.querySelector("button");
 clearButton.addEventListener("click", numSquares);
 function numSquares() {
