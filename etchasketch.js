@@ -4,6 +4,7 @@ let num = 16;
 let inputSquareAmount;
 let divWidth;
 let divHeight;
+let cell = [];
 fillContainer();
 function fillContainer() {
     for (let i = 1; i <= num*num; i++) { 
@@ -22,7 +23,7 @@ function fillContainer() {
     for (let i = 0; i < arrayDiv.length; i++) {
         arrayDiv[i].classList.add("divs");
         eachDiv[i].style.color = "white";
-        arrayDiv[i].innerHTML = '.';
+        arrayDiv[i].innerHTML = cell;
         arrayDiv[i].style.width = divWidth;
         arrayDiv[i].style.height = divHeight;
         arrayDiv[i].setAttribute('id', i +1);
